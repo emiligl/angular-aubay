@@ -1,27 +1,84 @@
-# AngularAubay
+Datos Curso Angular 8
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Clave Equipo = 201861
 
-## Development server
+Email Profesor Angular: alce65@hotmail.com
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+https://github.com/alce65
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+urls:
 
-## Build
+--angular
+https://angular.io/
+https://cli.angular.io/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-- estilos
+https://getbootstrap.com/
+https://material.io/
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+TypeScript = EC6 + types + annotations
+Webpack-> transpila TS en JS
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-- componentes
+https://www.webcomponents.org/ JS puro W3C
+https://www.polymer-project.org/ v3 LitElement framework ligero para crear componentes
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-- herramienta debug chrome
+https://augury.rangle.io/
+
+
+-- IDE 
+instalar visual studio code y sus extensiones
+instalar git
+git config  --global user.email emiliodelaiglesia2@gmail.com
+git config  --global user.name emiligl
+git config  --global -l
+
+
+instalar node 12
+empaquetador webpack (x defecto se instala solo)
+instalar angular cli: npm install -g @angular/cli
+
+
+ng new ‘app’ --prefix ‘pref’
+git remote add origin https://github.com/emiligl/angular-aubay.git
+git push -u origin master
+
+
+Tests:
+jasmine.js <- configurado x defecto
+mocha
+jest
+karma
+ng test  test unitario no se renderiza el elemento (dom virtual)
+
+
+Protractor-> testing de angular
+ng e2e integración distintos componentes (se renderiza en el navegador)
+
+
+evaluar formularios y acciones (poder simular clicks)
+
+
+Empaquetado
+ng build --prod
+
+
+Servidor local 
+npm install -g live-server
+live-server expone carpeta como file-server static
+
+
+Bootstrap
+npm install bootstrap
+https://ng-bootstrap.github.io/#/home
+ubicar css en angular.json siempre delante de nuestra hoja de estilos
+
+
+Formateador del lenguaje EC6
+npm install eslint
+.\node_modules\.bin\eslint --version chequeo version local
