@@ -43,6 +43,7 @@ const sumaB = function (a,b) {
 //No constructor, this apunta a la propia función, funciones anonimas
 const sumaC = (a,b) => {return a+b}
 const sumaD = (a,b) => a+b
+
 const cuadrado = a => a*a
 
 console.log(sumaA(1,5))
@@ -50,3 +51,36 @@ console.log(sumaB(2,5))
 console.log(sumaC(3,5))
 console.log(sumaD(4,5))
 console.log(cuadrado(3))
+
+
+//This es SIEMPRE la función
+
+const verThis = function(){
+    console.log('Ver this');
+    console.log(this)
+}
+verThis();
+const o = {
+    nombre: 'Pepe',
+    metodo: verThis
+}
+o.metodo()
+
+const arrow = () => {
+    console.log('Ver this en un arrow');
+    console.log(this)
+}
+
+arrow();
+
+const o2 = {
+    nombre: 'Juan',
+    metodo: arrow
+}
+
+o2.metodo()
+
+o2.metodoAsinc = function (){
+    console.log(this.nombre);
+    setTimeout(()=> { console.log(this.nombre) },1000)
+}
