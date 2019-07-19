@@ -82,3 +82,6 @@ ubicar css en angular.json siempre delante de nuestra hoja de estilos
 Formateador del lenguaje EC6
 npm install eslint
 .\node_modules\.bin\eslint --version chequeo version local
+
+TS<->JS
+https://www.typescriptlang.org
