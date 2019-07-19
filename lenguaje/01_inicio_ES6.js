@@ -42,7 +42,7 @@ const sumaB = function (a,b) {
 //Arrow functions o lambdas
 //No constructor, this apunta a la propia función, funciones anonimas
 const sumaC = (a,b) => {return a+b}
-const sumaD = (a,b) => a+b
+const sumaD = (a = 0,b = 0) => a+b //inicializamos por defecto los valores a 0
 
 const cuadrado = a => a*a
 
@@ -84,3 +84,32 @@ o2.metodoAsinc = function (){
     console.log(this.nombre);
     setTimeout(()=> { console.log(this.nombre) },1000)
 }
+
+o2.metodoAsinc()
+
+// Operadores spreed / rest
+
+const verArray = (...rest) => { console.log(rest)}
+
+verArray(1,3,4,6)
+
+const verNumeros = (a,b,c)=>{console.log(a,b,c)}
+
+const aMasDatos = [2,6,9]
+
+verNumeros(...aMasDatos);
+
+
+let s = 0
+
+for (const iterator of aMasDatos)
+{
+    s+=iterator
+}
+
+console.log(s)
+
+s=0
+
+aMasDatos.forEach(item =>  s+=item)
+console.log(s)
