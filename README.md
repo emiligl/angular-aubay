@@ -85,3 +85,16 @@ npm install eslint
 
 TS<->JS
 https://www.typescriptlang.org
+
+En typeScript no poner extensiones en los import. En javascript sí
+
+-- Angular
+Crear módulo core dependiente de app
+ ng g m core -m app
+Crear componente header dentro de modulo core y que sea visible desde todos los modulos
+ ng g c core/header -m core --export
+
+-- Estilos para un componente
+:host {    
+}
+-- Inicializacion de variables en angular dentro de ngOnInit() -- Recomendación
