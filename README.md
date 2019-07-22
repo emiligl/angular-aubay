@@ -99,9 +99,13 @@ Crear componente header dentro de modulo core y que sea visible desde todos los 
 Crear componente flat, crea el componente al mismo nivel que el modulo. -s -t inline style y template
  ng g c home\home --flat -s -t -m home 
 
-
-
 -- Estilos para un componente
 :host {    
 }
 -- Inicializacion de variables en angular dentro de ngOnInit() -- Recomendación
+
+-- Rutas component con a-r route eager
+-- Lazy loading por componentes método angular 8 ivy
+ quitar home tareas y usuarios de app.module
+-- Los módulos que introduces en el padre no son heredadods por los módulos hijos, hay que volverlos a importar.
+npm install @ng-bootstrap/ng-bootstrap -- instalación componentes bootstrap para angular
