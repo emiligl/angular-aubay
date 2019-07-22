@@ -91,8 +91,15 @@ En typeScript no poner extensiones en los import. En javascript sí
 -- Angular
 Crear módulo core dependiente de app
  ng g m core -m app
+Crear modulo con routing dependiente del modulo app principal, fuerzo que sobreescriba
+ ng g m home -m app --routing --force
+
 Crear componente header dentro de modulo core y que sea visible desde todos los modulos
  ng g c core/header -m core --export
+Crear componente flat, crea el componente al mismo nivel que el modulo. -s -t inline style y template
+ ng g c home\home --flat -s -t -m home 
+
+
 
 -- Estilos para un componente
 :host {    
