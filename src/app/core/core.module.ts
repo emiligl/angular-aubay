@@ -6,8 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent, 

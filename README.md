@@ -109,3 +109,12 @@ Crear componente flat, crea el componente al mismo nivel que el modulo. -s -t in
  quitar home tareas y usuarios de app.module
 -- Los módulos que introduces en el padre no son heredadods por los módulos hijos, hay que volverlos a importar.
 npm install @ng-bootstrap/ng-bootstrap -- instalación componentes bootstrap para angular
+--
+TESTS:
+Karma utiliza jasmine para test (berhavior driven)
+ instalar jasmine code snippets
+
+Se puede utilizar jasmine sin karma
+https://jasmine.github.io/pages/getting_started.html
+añadir una nueva linea de test para ejecutar 
+
