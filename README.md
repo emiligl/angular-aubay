@@ -118,3 +118,5 @@ Se puede utilizar jasmine sin karma
 https://jasmine.github.io/pages/getting_started.html
 añadir una nueva linea de test para ejecutar 
 
+Test e2e va por páginas, pantallazos del navegador
+protractor tambien ejecuta jasmine

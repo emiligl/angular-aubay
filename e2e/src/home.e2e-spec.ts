@@ -1,16 +1,22 @@
-import { AppPage } from './app.po';
+import { HomePage } from './Home.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
-  let page: AppPage;
+describe('workspace-project Home', () => {
+  let page: HomePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new HomePage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to Angular Aubay!');
+    expect(page.getTitleText()).toEqual('Angular Aubay');
+  });
+
+  it('should behave in the footer the author name', () => {
+    page.navigateTo();
+    let autor = 'Emilio De la Iglesia'
+    expect(page.getFooterText()).toContain(autor);
   });
 
   afterEach(async () => {
