@@ -8,7 +8,7 @@
 <button type="button" name="btn-borrar" id="btn-borrar" (click)="onClickBorrar($event)"
     class="btn btn-primary btn-lg btn-block">
     Borrar
-</button>    
+</button>
 <div class="mt-4 mb-4">
-    <output>Hola {{ nombre }}</output>
+    <output>Hola {{ ( nombre.toUpperCase() == 'PEPE')?'JOSÉ': nombre.toUpperCase() }}</output>
 </div>    

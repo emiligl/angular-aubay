@@ -120,3 +120,16 @@ añadir una nueva linea de test para ejecutar
 
 Test e2e va por páginas, pantallazos del navegador
 protractor tambien ejecuta jasmine
+
+-- Compilación 
+    -> Just in time (JIT)  ng serve
+    -> Ahead of time (AOT) ng serve --aot
+
+Encapsulación dentro de un componente: 
+ViewEncapsulation.ShadowDom no admite css de fuera, solo local al componente.
+ViewEncapsulation.Emulated por defecto, css de ese componente afecta solo al componente
+ViewEncapsulation.None si escribes en el css del componente se expande al resto
+
+Guía oficial Angular
+https://angular.io/guide/styleguide
+

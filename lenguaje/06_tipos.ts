@@ -94,3 +94,20 @@
     }
 
 }
+
+// Enums
+{
+    enum Direction {
+        Up = 1,
+        Down,
+        Left,
+        Right
+    }
+
+    let x: Direction
+    x = Direction.Down;
+    
+
+
+
+}

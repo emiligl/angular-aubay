@@ -1,10 +1,13 @@
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <aby-saludo></aby-saludo>
+        <div class="col-6">
+            <aby-saludo></aby-saludo>            
         </div>
-        <div>
-            <ngb-carousel *ngIf="images" class="col-12">
+        <div class="col-6">
+            <aby-saludo-local></aby-saludo-local>            
+        </div>
+        <div class="col-12">
+            <ngb-carousel *ngIf="images">
                 <ng-template ngbSlide>
                     <div class="picsum-img-wrapper">
                     <img class="img-fluid" [src]="images[0]" alt="Random first slide">

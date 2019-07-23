@@ -1,0 +1,25 @@
+<h3>Lista simple</h3>
+<div class="form-group">
+  <label for="in-nombre">Nombre</label>
+  <input type="text" name="in-nombre" id="in-nombre" class="form-control" 
+  [(ngModel)]="newTarea.nombre" placeholder="">
+</div>
+<div class="form-group">
+    <label for="in-responsable">Responsable</label>
+    <input type="text" name="in-responsable" id="in-responsable" class="form-control" 
+    [(ngModel)]="newTarea.responsable" placeholder="">
+</div>
+<div>
+    <button type="button" class="btn btn-primary" (click)="addTarea()">Guardar</button>
+    <span class="pl-2"></span>
+    <button type="button" class="btn btn-primary" (click)="deleteAllTareas()">Borrar Todas</button>
+</div>
+<div>
+    <h4>Tareas</h4>
+    <ul>
+        <li *ngFor="let tarea of aTareas" >
+            <input type="checkbox" name="isC" id="isC" [(ngModel)]= "tarea.isCompleted" (change)='saveTareas()' >
+            {{ tarea.nombre }} - {{ tarea.responsable }}
+        </li>
+    </ul>
+</div>
