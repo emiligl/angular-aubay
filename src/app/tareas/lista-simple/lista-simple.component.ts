@@ -26,6 +26,7 @@ export class ListaSimpleComponent implements OnInit {
 
   deleteTarea(i: number){
     this.aTareas.splice(i,1)
+    this.saveTareas();
   }
 
   deleteAllTareas(){

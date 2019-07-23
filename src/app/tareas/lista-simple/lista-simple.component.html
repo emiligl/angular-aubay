@@ -17,9 +17,10 @@
 <div>
     <h4>Tareas</h4>
     <ul>
-        <li *ngFor="let tarea of aTareas" >
+        <li *ngFor="let tarea of aTareas; let i = index" >
             <input type="checkbox" name="isC" id="isC" [(ngModel)]= "tarea.isCompleted" (change)='saveTareas()' >
             {{ tarea.nombre }} - {{ tarea.responsable }}
+            <span class="pointer" (click)="deleteTarea(i)"> 🗑️ </span>
         </li>
     </ul>
 </div>
