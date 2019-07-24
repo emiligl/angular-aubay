@@ -10,9 +10,11 @@ export class NuevaTareaComponent implements OnInit {
 
   newTarea: TareaModel
   @Output() addTarea: EventEmitter<TareaModel>
+  @Output() deleteAllTareas: EventEmitter<null>
 
   constructor() { 
     this.addTarea = new EventEmitter()
+    this.deleteAllTareas = new EventEmitter()
   }
 
   ngOnInit() {
@@ -22,6 +24,10 @@ export class NuevaTareaComponent implements OnInit {
   onClickAdd(){
     this.addTarea.next(this.newTarea) //Mas moderno que poner emit, propago la tarea al padre
     this.newTarea = new TareaModel()
+  }
+
+  onClickDeleteAll(){
+    this.deleteAllTareas.next(null)
   }
 
 }
