@@ -1,0 +1,13 @@
+.pointer {
+    cursor: pointer;
+}
+
+.completado {
+    text-decoration: line-through;
+    color: grey;
+    font-style: italic
+}
+.nocompletado {
+    color: blue;
+    font-style: bold
+}

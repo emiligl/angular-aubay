@@ -15,6 +15,7 @@ export class ListaSimpleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.isEditable = false;
     this.aTareas = localStorage.getItem('tareas') ? JSON.parse(localStorage.getItem('tareas')) : []           
     this.newTarea = new TareaModel()
   }

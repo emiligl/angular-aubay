@@ -139,4 +139,5 @@ Font awesome
 https://github.com/FortAwesome/angular-fontawesome
 https://www.npmjs.com/package/angular-font-awesome
 
-Emoji
+Patrón controlador - presentadores
+EventEmitter se inicializan en el constructor no en ngOnInit (seria muy tarde)
