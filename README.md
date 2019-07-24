@@ -141,3 +141,24 @@ https://www.npmjs.com/package/angular-font-awesome
 
 Patrón controlador - presentadores
 EventEmitter se inicializan en el constructor no en ngOnInit (sería muy tarde)
+
+Pipes
+Date: internationalization
+https://angular.io/guide/i18n
+
+-- incluir en app.module.ts
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+
+registerLocaleData(localeEs);
+...
+...
+providers: [
+    { provide:LOCALE_ID, useValue: 'es'}
+],
+
+
+Traducción en angular, librerías de terceros:
+https://angular-translate.github.io/
+https://github.com/ngx-translate/core
+
