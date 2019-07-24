@@ -133,3 +133,10 @@ ViewEncapsulation.None si escribes en el css del componente se expande al resto
 Guía oficial Angular
 https://angular.io/guide/styleguide
 
+ng-template sienpre fuera del *ngif-else-then
+
+Font awesome
+https://github.com/FortAwesome/angular-fontawesome
+https://www.npmjs.com/package/angular-font-awesome
+
+Emoji

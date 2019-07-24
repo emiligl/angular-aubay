@@ -8,6 +8,7 @@ import { TareaModel } from 'src/app/models/tarea.model';
 })
 export class ListaSimpleComponent implements OnInit {
 
+  isEditable:boolean
   aTareas: Array<TareaModel>
   newTarea: TareaModel
 
