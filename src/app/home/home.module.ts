@@ -7,6 +7,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SaludoComponent } from './saludo/saludo.component';
 import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [HomeComponent, SaludoComponent, SaludoLocalComponent],
@@ -14,7 +15,8 @@ import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
     CommonModule,
     NgbModule,
     FormsModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

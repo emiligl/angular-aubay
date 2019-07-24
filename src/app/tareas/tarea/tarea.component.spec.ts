@@ -21,7 +21,8 @@ describe('TareaComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TareaComponent);
     component = fixture.componentInstance;
-    component.tarea = new TareaModel() //IMPORTANTE REVISAR porque es input y objeto
+    component.tarea = new TareaModel() //IMPORTANTE REVISAR, 
+    //hay que inicializarlo porque tarea es input y objeto
     fixture.detectChanges();
   });
 
