@@ -140,4 +140,4 @@ https://github.com/FortAwesome/angular-fontawesome
 https://www.npmjs.com/package/angular-font-awesome
 
 Patrón controlador - presentadores
-EventEmitter se inicializan en el constructor no en ngOnInit (seria muy tarde)
+EventEmitter se inicializan en el constructor no en ngOnInit (sería muy tarde)

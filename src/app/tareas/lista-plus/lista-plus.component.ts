@@ -30,4 +30,10 @@ export class ListaPlusComponent implements OnInit {
     this.saveTareas();
   }
 
+  changeTarea(o: {i:number, tarea:TareaModel}){
+    this.aTareas.splice(o.i, 1, o.tarea) 
+    //sustituir la tarea que estaba en la posicion i por la que acaba de llegar
+    this.saveTareas();
+  }
+
 }

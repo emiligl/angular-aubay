@@ -6,7 +6,9 @@
         <h4>Tareas</h4>
         <ul>
             <li *ngFor="let tarea of aTareas; let i = index">
-                <aby-tarea [tarea]="tarea" [i]="i" (deleteTarea)="deleteTarea($event)"  ></aby-tarea>
+                <aby-tarea [tarea]="tarea" [i]="i" 
+                (changeTarea)="changeTarea($event)"
+                (deleteTarea)="deleteTarea($event)"></aby-tarea>
             </li>
         </ul>
     </div>
