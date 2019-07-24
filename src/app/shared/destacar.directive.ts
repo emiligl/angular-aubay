@@ -12,13 +12,12 @@ export class DestacarDirective implements OnInit {
   }
 
   ngOnInit(){
-    console.log(`Directiva aplicada ${this.abyDestacar}`)
     // this.eTarget.nativeElement.title = this.abyDestacar
     this.eTarget.nativeElement.setAttribute('title',this.abyDestacar)
   }
 
   @HostListener('click') anular(){
-    console.log(`Directiva anulada`)
+    this.eTarget.nativeElement.setAttribute('title','Directiva anulada')
   }
 
 }
