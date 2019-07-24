@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListaSimpleComponent } from './lista-simple.component';
+import { FormsModule } from '@angular/forms';
+import { NuevaTareaComponent } from '../nueva-tarea/nueva-tarea.component';
+import { TareaComponent } from '../tarea/tarea.component';
 
 describe('ListaSimpleComponent', () => {
   let component: ListaSimpleComponent;
@@ -8,7 +11,12 @@ describe('ListaSimpleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListaSimpleComponent ]
+      declarations: [ 
+        ListaSimpleComponent,
+        NuevaTareaComponent,
+        TareaComponent
+      ],
+      imports: [FormsModule]
     })
     .compileComponents();
   }));

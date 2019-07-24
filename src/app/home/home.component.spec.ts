@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { SaludoComponent } from './saludo/saludo.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,7 +12,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({   
-      declarations: [SaludoComponent, HomeComponent ],
+      declarations: [SaludoComponent, HomeComponent, SaludoLocalComponent ],
       imports: [NgbModule, FormsModule]
     })
     .compileComponents();
