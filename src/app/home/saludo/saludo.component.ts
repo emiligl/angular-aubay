@@ -9,12 +9,14 @@ export class SaludoComponent implements OnInit {
 
   nombre: string;
   message: string;
+  frase: string;
 
   constructor() { }
 
   ngOnInit() {
     this.nombre = ''
     this.message= 'Dime tu nombre'
+    this.frase = 'Esto es un ejemplo de uso de Pipes Custom'
   }
 
   onClickBorrar(ev: Event){
