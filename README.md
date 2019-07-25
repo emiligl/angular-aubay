@@ -162,3 +162,7 @@ Traducción en angular, librerías de terceros:
 https://angular-translate.github.io/
 https://github.com/ngx-translate/core
 
+Servicios: todo aquello que pueden compartir varios componentes, operaciones internas, capa diferente para organizar mejor el proyecto, capa de servicios. Se inyectan no instancian.
+@Injectable -> decorador que hace que sea inyectable
+--> se puede utilizar para compartir variables entre componentes. Ejemplo Login JWT
+
