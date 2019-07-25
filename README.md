@@ -166,3 +166,8 @@ Servicios: todo aquello que pueden compartir varios componentes, operaciones int
 @Injectable -> decorador que hace que sea inyectable
 --> se puede utilizar para compartir variables entre componentes. Ejemplo Login JWT
 
+Formularios:
+Template Driven
+Model Driven
+La propia etiqueta <form> lleva implicita la llamada a la directiva ngForm (único caso que va implícita)
+Operador elvis ? si el objeto es null el valor booleano es falso, no da error

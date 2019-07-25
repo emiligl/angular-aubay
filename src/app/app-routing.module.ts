@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'usuarios', 
     loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)
   },
+  {
+    path: 'cursos', 
+    loadChildren: () => import('./cursos/cursos.module').then(m => m.CursosModule)
+  },
   // { path: 'usuarios', component: UsuariosComponent },
   { path: '', pathMatch:'full', redirectTo: 'home' },
   { path: '**', redirectTo: 'home' },
