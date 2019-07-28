@@ -26,7 +26,8 @@ export class FormTdComponent implements OnInit {
   }
 
   onSubmit(ev){
-    console.log(ev)
+    // console.log(ev)
+    console.log(this.alumno)
     console.log('Enviando...')
     ev.preventDefault() //Angular lo hace por defecto
   }

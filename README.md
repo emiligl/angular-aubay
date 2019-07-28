@@ -171,3 +171,10 @@ Template Driven
 Model Driven
 La propia etiqueta <form> lleva implicita la llamada a la directiva ngForm (único caso que va implícita)
 Operador elvis ? si el objeto es null el valor booleano es falso, no da error
+
+---
+DUDAS:
+"resolveJsonModule": true,
+"esModuleInterop": true,
+
+OBSERVABLES en Auth.guard y en Reactive Form?
