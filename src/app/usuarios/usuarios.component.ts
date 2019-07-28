@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'aby-usuarios',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsuariosComponent implements OnInit {
 
-  constructor() { }
+  usuario: string; 
+
+  constructor(
+    public activatedRoute: ActivatedRoute,
+    public router: Router
+  ) { }
 
   ngOnInit() {
+    this.usuario = this.activatedRoute.snapshot.params['user'] 
+  }
+
+  onClickIr() {
+    this.router.navigate(['/home'])
+    //this.router.navigateByUrl('https://github.com/ReactiveX/rxjs/tree/6.x')
   }
 
 }
