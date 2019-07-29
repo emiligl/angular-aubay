@@ -192,5 +192,11 @@ https://developers.google.com/books/v1/volumes?q=intitle:"clave"
 
 https://www.googleapis.com/books/v1/volumes?q=intitle:%22clave%22
 
+https://codinglatte.com/posts/angular/angular-async-pipe-handle-errors/
 
+-- Angular Universal
+https://angular.io/guide/universal
+
+
+-- Service Worker, pwa
 
