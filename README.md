@@ -178,3 +178,9 @@ DUDAS:
 "esModuleInterop": true,
 
 OBSERVABLES en Auth.guard y en Reactive Form?
+
+https://rxjs-dev.firebaseapp.com/
+
+Operador from similar a of pero más genérico
+
+
