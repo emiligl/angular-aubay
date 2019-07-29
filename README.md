@@ -176,11 +176,21 @@ Operador elvis ? si el objeto es null el valor booleano es falso, no da error
 DUDAS:
 "resolveJsonModule": true,
 "esModuleInterop": true,
+Importar json desde TS automáticamente.
 
 OBSERVABLES en Auth.guard y en Reactive Form?
 
 https://rxjs-dev.firebaseapp.com/
 
 Operador from similar a of pero más genérico
+
+-- HttpClient
+https://developers.google.com/apis-explorer/#p/ 
+Ejemplo: https://developers.google.com/apis-explorer/#p/books/v1/books.volumes.list
+
+https://developers.google.com/books/v1/volumes?q=intitle:"clave"
+
+https://www.googleapis.com/books/v1/volumes?q=intitle:%22clave%22
+
 
 
